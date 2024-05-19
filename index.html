@@ -4,10 +4,297 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Broadway Sings 2024</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('bg.png');
+            background-size: cover; /* Makes the background cover the entire page */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .center {
+            text-align: center;
+        }
+        .wrapper {
+            width: 88%;
+            height: 88%;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            overflow-y: auto; /* Enables vertical scrolling */
+            overflow-x: hidden;
+            border-radius: 10px;
+        }
+        .wrapper > header > a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            margin-right: 10px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .program {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #f8f9fa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .program > div ol {
+            list-style: none;
+            padding: 0;
+        }
+        .program li {
+            margin: 20px 0;
+        }
+        .program li > * {
+            margin: 0;
+        }
+        .bios > ul {
+            list-style: none;
+            padding: 0;
+        }
+        .bios {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            align-items: center;
+            margin: 20px auto 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .bio-picture img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .bio-info {
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+        .bio-info h2 {
+            margin-top: 0;
+        }
+        .bio-info p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .header-thanks {
+            font-family: Arial, sans-serif;
+            font-size: 1.2em;
+            color: #333;
+            line-height: 1.6;
+            max-width: 50%;
+            margin: 40px auto;
+        }
+        .flyer {
+            max-width: 100%;
+        }
+        @media (max-width: 750px) {
+            .program {
+                grid-template-columns: 1fr;
+            }
+            .bios {
+                grid-template-columns: 1fr;
+            }
+            .header-thanks {
+                max-width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Broadway Sings 2024!</h1>
-    <p>Experience the magic of Broadway as we showcase a series of performances from the most iconic musicals.</p>
+    <div class="wrapper">
+        <header>
+            <h1>WELCOME TO BROADWAY SINGS 2024!</h1>
+            <a href="#program" style="padding-right: 10px;">Program</a>
+            <a href="#bios">Headshots & Bios</a>
+            <p class="header-thanks">
+                Thank you all for attending our Broadway Sings concert! 
+                Your presence and support mean the world to us and our P.S. 166 community. 
+                Thank you for your generosity! 
+                Together, we are making a difference in the lives of student's education and 
+                fostering a love for the performing arts.
+            </p>
+            <img class="flyer" src="flyer.png" alt="Broadway Sings 2024">
+        </header>
+        <section id="program" class="program-wrapper">
+            <header style="margin-top: 40px;">
+                <h2 class="center">PROGRAM</h2>
+            </header>
+            <div class="program">
+                <div>
+                    <h3 class="center">Act 1</h3>
+                    <ol class="center">
+                        <li>
+                            <h4>Route 166 Band</h4>
+                            <h5>"Waving Through a Window"</h5>
+                            <p><small>From Dear Evan Hansen By Benj Pasek and Justin Paul</small></p>
+                        </li>
+                        <li>
+                            <h4>Marc delaCruz</h4>
+                            <h5>"Pure Imagination"</h5>
+                            <p><small>By Leslie Bricusse and Anthony Newley</small></p>
+                        </li>
+                        <li>
+                            <h4>Jacob Gutierrez</h4>
+                            <h5>"Put on A Happy Face"</h5>
+                            <p><small>From Bye Bye Birdie By Charles Strouse and Lee Adams</small></p>
+                        </li>
+                        <li>
+                            <h4>Kelvin Moon Loh</h4>
+                            <h5>"The Impossible Dream"</h5>
+                            <p><small>From Man of La Mancha By Mitch Leigh and Joe Darion</small></p>
+                        </li>
+                        <li>
+                            <h4>Grace Morgan & Daniel Berryman</h4>
+                            <h5>"All I Ask of You"</h5>
+                            <p><small>From The Phantom of the Opera By Andrew Lloydd Webber</small></p>
+                        </li>
+                        <li>
+                            <h4>Cece Popp</h4>
+                            <h5>"Annie Medley"</h5>
+                            <p><small>From Annie By Charles Strouse and Martin Charnin</small></p>
+                        </li>
+                        <li>
+                            <h4>Morgan Anita Wood</h4>
+                            <h5>"He Wanted A Girl"</h5>
+                            <p><small>From Giant By Michael John LaChiusa</small></p>
+                        </li>
+                        <li>
+                            <h4>VICTOR LIN</h4>
+                            <h5>"Medley for PS166"</h5>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <h3 class="center">Act 2</h3>
+                    <ol class="center">
+                        <li>
+                            <h4>Casey Likes</h4>
+                            <h5>"Go the Distance"</h5>
+                            <p><small>From Hercules By Alan Menken & David Zippel</small></p>
+                        </li>
+                        <li>
+                            <h4>Ashley Blanchet</h4>
+                            <h5>"The Best Things In Life Are Free"</h5>
+                            <p><small>From Good News by B.G. DeSylva, Lew Brown, Ray Henderson</small></p>
+                        </li>
+                        <li>
+                            <h4>Grace Morgan</h4>
+                            <h5>"Notice Me Horton"</h5>
+                            <p><small>From Seussical by Lynn ahrens and Stephen Flaherty</small></p>
+                        </li>
+                        <li>
+                            <h4>Kara Lindsay & Kevin Massey</h4>
+                            <h5>"You'll Be In My Heart"</h5>
+                            <p><small>From Tarzan By Phil Collins</small></p>
+                        </li>
+                        <li>
+                            <h4>Billy Tighe</h4>
+                            <h5>"Neverland"</h5>
+                            <p><small>From Finding Neverland by Gary Barlow and Eliot Kennedy</small></p>
+                        </li>
+                        <li>
+                            <h4>Autumn Hurlbert</h4>
+                            <h5>"So Much Better"</h5>
+                            <p><small>From Legally Blonde By Laurence O'Keefe and Nell Benjamin</small></p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section id="bios">
+            <h2 class="center" style="margin-top: 40px;">HEADSHOTS & BIOS</h2>
+            <ul class="center" style="padding: 0;">
+                <li class="bios">
+                    <div class="bio-picture">
+                        <img src="marc.jpeg" alt="Picture of Marc delaCruz">
+                    </div>
+                    <div class="bio-info">
+                        <h2>Marc delaCruz</h2>
+                        <p>Marc delaCruz is a Filipino-American actor, singer, and musician. He is best known for his work in the Broadway production of Hamilton, where he played the role of Alexander Hamilton. He has also appeared in other Broadway productions, including If/Then, Allegiance, and American Idiot. Marc has also performed in regional theater productions, including Miss Saigon, The King and I, and The Fantasticks. He has also appeared in television shows such as Law & Order: Special Victims Unit and The Blacklist. Marc is a graduate of the University of California, Irvine, where he studied theater and music.</p>
+                    </div>
+                </li>
+                <li class="bios">
+                    <div class="bio-picture">
+                        <img src="ashley.jpg" alt="Picture of Ashley Blanchet">
+                    </div>
+                    <div class="bio-info">
+                        <h2>Ashley Blanchet</h2>
+                        <p>Ashley was most recently seen as Dawn in Waitress with Sara Bareilles, other Broadway credits include: Frozen, Beautiful the Carole King Musical, Annie, and Memphis. Select OffBway/Regional: Title roles in Cinderella and The Sound of Music at The Papermill Playhouse, Belle in Beauty and the Beast (St Louis MUNY),  Ado Annie in Oklahoma (Pittsburgh Civic Light Opera) and Miss New Hampshire in Sarah Silverman's The Bedwetter at the Atlantic Theater. Film/TV: The Good Fight, The Equalizer, "WonderPets," Better Nate Than Ever,”and the voice of Raquelle in the award winning short animated film "Are You Okay?" You can find her on instagram: @a_Blanchet!</p>
+                    </div>
+                </li>                
+                <li class="bios">
+                    <div class="bio-picture">
+                        <img src="cece.jpeg" alt="Picture of Cecilia Ann Popp">
+                    </div>
+                    <div class="bio-info">
+                        <h2>Cecilia Ann Popp (Cece)</h2>
+                        <p>Cece is in third grade at PS 166 and is currently making her Broadway debut as "Tommy, age 4" in The Who’s Tommy, which was just nominated for a 2024 Tony Award for Best Revival of a Musical!  You can catch her performances at the Nederlander Theater on Wednesdays at 2 pm, Fridays at 7 pm, Saturdays at 2 pm, and Sundays at 3 pm.  Previous theater experience includes "Veruca Salt" in Willy Wonka and "Amanda Thripp" in Matilda with the Children’s Acting Academy, and "Star To Be/ Orphan Becky" in Annie with A Class Act NY.  Cece is very excited to join Broadway Sings to help benefit PS 166!
+                        </p>
+                    </div>
+                </li>     
+                <li class="bios">
+                    <div class="bio-picture">
+                        <img src="kelvin.jpeg" alt="Picture of Kelvin Moon Loh">
+                    </div>
+                    <div class="bio-info">
+                        <h2>Kelvin Moon Loh</h2>
+                        <p>Kelvin Moon Loh is an actor, singer, and writer from Queens/Long Island, NY. He is best known for his appearances on Broadway in Beetlejuice, SpongeBob SquarePants, The King and I, and Side Show. Other favorite stage credits include Here Lies Love at The Public Theater, Pacific Overtures at Classic Stage, The American Idiot 1st National Tour, and Gold Mountain at Utah Shakespeare Festival. He is a vocalist in the films Spirited, Lyle Lyle Crocodile, The Greatest Showman, and the upcoming Kiss of the Spiderwoman starring Jennifer Lopez. As a writer, Kelvin has several projects in development for the screen that focus on stories told through the lens of the Asian American experience. Follow @kelvinmoonloh.</p>
+                    </div>
+                </li>
+                <li class="bios">
+                    <div class="bio-picture">
+                        <img src="jacob.jpeg" alt="Picture of Jacob Gutierrez">
+                    </div>
+                    <div class="bio-info">
+                        <h2>Jacob Gutierrez</h2>
+                        <p>Jacob Gutierrez currently can be found performing in Aladdin on Broadway, where he has had the pleasure of playing the title role! He recently made his American Pops Orchestra debut performing in their “Broadway’s Leading Men” Concert series to air on PBS this summer! Other regional favorite credits include The Light in the Piazza, The Little Mermaid, Cinderella, and Aladdin in Aladdin: The Musical Spectacular on Disney Cruise Line. TV: Dear Edward (Apple TV+), Bull (CBS).</p>
+                    </div>
+                </li>   
+                <li class="bios">
+                    <div class="bio-picture">
+                        <img src="kara.JPG" alt="Picture of Kara Lindsay">
+                    </div>
+                    <div class="bio-info">
+                        <h2>Kara Lindsay</h2>
+                        <p>Broadway: Wicked (Glinda), Beautiful (Cynthia Weil), Newsies (Katherine Plumber) Original Cast/ Fathom Events Film. NYCity Center: Once Upon a Mattress (Winnifred Standby for Sutton Foster). National Tour: Wicked (Glinda), Little House on the Prairie (originated Laura). Paper Mill Playhouse: Newsies, Jolly Holiday, Little House...Prairie. Sacramento Music Circus: Singin in the Rain (Kathy Selden). NCT: Mary Poppins (Mary Poppins). Kansas City Starlight: Cinderella (Cinderella). Kansas City Rep: Cabaret (Sally Bowles). 5th Avenue: Lone Star Love (Miss Ann Page). Geva: A Christmas Carol (Belle). TV: “Murphy Brown”, ABC’s “Schoolhouse Rock! 50th Anniversary Singalong”, ABC’s “The Disney Family Singalong: Volume II”, Tony Awards, Macy’s Thanksgiving Day Parade. BFA Carnegie Mellon University. Huge thanks and LOVE to my friends, family, Stewart Talent/ Industry Entertainment. @karalindsay1</p>
+                    </div>
+                </li>
+                <li class="bios">
+                    <div class="bio-picture">
+                        <img src="kevin.jpeg" alt="Picture of Kevin Massey">
+                    </div>
+                    <div class="bio-info">
+                        <h2>Kevin Massey</h2>
+                        <p>Broadway: Gentleman's Guide to Love and Murder (Monty Navarro u/s), Memphis (Huey u/s), Tarzan (OBC & Cast Album, Tarzan u/s), Wicked (u/s Wizard, Dillamond, swing), Deaf West’s Big River (Revival OBC, swing), Antony & Cleopatra (Eros, NYCO at Carnegie Hall). Off-Broadway: Bella: An American Tall Tale (Bonny Johnny/Snaggletooth, Playwrights Horizons, Cast Album). Tours: Gentleman's Guide... (originated Monty Navarro, 1st National), Little House on the Prairie (originated Almanzo Wilder, 1st National, Paper Mill, Guthrie Theater). Europe: Tarzan (Tarzan, Hamburg), Grease! (Doody). Select Regional: Sunset Blvd. (Artie, North Shore MT), The Rivals, musical (originated Jack Absolute, BRT), Titanic (Bride, PCLO), The Full Monty (Malcolm, PCLO), Bonnie & Clyde (Ted, Asolo Rep), The Three Musketeers (originated D’Artagnan, Chicago Shakespeare), Pippin (Pippin, Utah Shakes & KC Rep); UNC Morehead-Cain Scholar. TV: ABC’s The Disney Family Singalong: Volume II, Tony Awards, NBC & CBS Macy’s Day Parade. Love my Kara, little guy and family @kcmassey1 www.kevinmassey.com</p>
+                    </div>
+                </li>
+                <li class="bios">
+                    <div class="bio-picture">
+                        <img src="morgan.jpeg" alt="Picture of Morgan Anita Wood">
+                    </div>
+                    <div class="bio-info">
+                        <h2>Morgan Anita Wood</h2>
+                        <p>Morgan Anita Wood (she/her) has been on the road with Hamilton for the past few years covering all three Schuyler sisters and was most recently seen as ‘Eliza’ with the And Peggy Tour. She has since introduced the First Lady at this past Fall’s ‘Broadway for Biden’ event, been involved in several workshops and readings and performed in the new play, “Loving and Loving” at Actor’s Theatre of Louisville earlier this year. She’s also performed at the Hollywood Bowl, the Utah Shakespeare Festival, the John W. Engeman Theatre and more. She’s thrilled to be back living in NYC and honored to be here!</p>
+                    </div>
+                </li>                                                       
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
 
