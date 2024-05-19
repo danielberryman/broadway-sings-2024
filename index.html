@@ -16,6 +16,7 @@
             background-position: center; /* Centers the image */
             background-repeat: no-repeat;
             background-color: rgba(255, 255, 255, 0.8);
+            font-family: Arial, sans-serif;
         }
         .center {
             text-align: center;
@@ -28,15 +29,16 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             overflow-y: auto; /* Enables vertical scrolling */
             overflow-x: hidden;
-            border-radius: 10px;
         }
-        .wrapper > header > a {
+        .link {
             text-decoration: none;
             color: #333;
             padding: 10px;
             border-radius: 5px;
             background-color: #f8f9fa;
             margin-right: 10px;
+            font-size: small;
+            font-weight: lighter;
         }
         header {
             text-align: center;
@@ -81,7 +83,6 @@
             border-radius: 10px;
         }
         .bio-info {
-            font-family: Arial, sans-serif;
             text-align: left;
         }
         .bio-info h2 {
@@ -117,10 +118,10 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
+        <header id="header">
             <h1>WELCOME TO BROADWAY SINGS 2024!</h1>
-            <a href="#program" style="padding-right: 10px;">Program</a>
-            <a href="#bios">Headshots & Bios</a>
+            <a class="link" href="#program" style="padding-right: 10px;">Program</a>
+            <a class="link" href="#bios">Headshots & Bios</a>
             <p class="header-thanks">
                 Thank you all for attending our Broadway Sings concert! 
                 Your presence and support mean the world to us and our P.S. 166 community. 
@@ -132,7 +133,10 @@
         </header>
         <section id="program" class="program-wrapper">
             <header style="margin-top: 40px;">
-                <h2 class="center">PROGRAM</h2>
+                <h2 class="center">
+                    PROGRAM
+                    <a class="link" href="#header">Top</a>
+                </h2>
             </header>
             <div class="program">
                 <div>
@@ -217,7 +221,10 @@
             </div>
         </section>
         <section id="bios">
-            <h2 class="center" style="margin-top: 40px;">HEADSHOTS & BIOS</h2>
+            <h2 class="center" style="margin-top: 40px;">
+                HEADSHOTS & BIOS
+                <a class="link" href="#header">Top</a>
+            </h2>
             <ul class="center" style="padding: 0;">
                 <li class="bios">
                     <div class="bio-picture">
@@ -294,6 +301,9 @@
                 </li>                                                       
             </ul>
         </section>
+        <footer class="center">
+            <a class="link" href="#header">Top</a>
+        </footer>
     </div>
 </body>
 </html>
